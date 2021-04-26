@@ -285,24 +285,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="spD-8G-vZv">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="32"/>
-                                <segments>
-                                    <segment title="Preview"/>
-                                    <segment title="Category"/>
-                                    <segment title="Menu"/>
-                                </segments>
-                                <connections>
-                                    <action selector="switchViews:" destination="SUZ-Cp-3KI" eventType="valueChanged" id="VDS-pj-wWh"/>
-                                </connections>
-                            </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BuY-6E-WJM">
                                 <rect key="frame" x="0.0" y="31" width="375" height="587"/>
                                 <connections>
                                     <segue destination="Phc-x6-4YT" kind="embed" id="caU-hW-Lik"/>
                                 </connections>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Kf-Ze-BJ8">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Kf-Ze-BJ8" userLabel="viewPreview">
                                 <rect key="frame" x="0.0" y="31" width="375" height="581"/>
                                 <connections>
                                     <segue destination="Zja-kU-ktg" kind="embed" id="85U-Fm-jUs"/>
@@ -314,32 +303,43 @@
                                     <segue destination="Piy-Hs-ZCR" kind="embed" id="KiU-Gp-AIP"/>
                                 </connections>
                             </containerView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="sTL-g0-Dec">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="32"/>
+                                <segments>
+                                    <segment title="Preview"/>
+                                    <segment title="Category"/>
+                                    <segment title="Menu"/>
+                                </segments>
+                                <connections>
+                                    <action selector="switchViews:" destination="SUZ-Cp-3KI" eventType="valueChanged" id="LHa-rE-7VL"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="vDM-Mb-nFU" firstAttribute="trailing" secondItem="Cmh-rQ-Oj7" secondAttribute="trailing" id="Mgh-e2-3hv"/>
-                            <constraint firstItem="BuY-6E-WJM" firstAttribute="top" secondItem="spD-8G-vZv" secondAttribute="bottom" id="N57-VR-2bH"/>
-                            <constraint firstItem="vDM-Mb-nFU" firstAttribute="bottom" secondItem="BuY-6E-WJM" secondAttribute="bottom" id="NPW-Ie-iCT"/>
-                            <constraint firstItem="0Kf-Ze-BJ8" firstAttribute="top" secondItem="spD-8G-vZv" secondAttribute="bottom" id="U5n-Do-mep"/>
-                            <constraint firstItem="spD-8G-vZv" firstAttribute="leading" secondItem="vDM-Mb-nFU" secondAttribute="leading" id="UY6-oI-9SB"/>
-                            <constraint firstItem="vDM-Mb-nFU" firstAttribute="bottom" secondItem="Cmh-rQ-Oj7" secondAttribute="bottom" id="WET-NY-CVK"/>
-                            <constraint firstItem="0Kf-Ze-BJ8" firstAttribute="trailing" secondItem="vDM-Mb-nFU" secondAttribute="trailing" id="Yjv-JK-P1F"/>
-                            <constraint firstItem="Cmh-rQ-Oj7" firstAttribute="top" secondItem="spD-8G-vZv" secondAttribute="bottom" id="b94-ec-SoZ"/>
-                            <constraint firstItem="vDM-Mb-nFU" firstAttribute="bottom" secondItem="0Kf-Ze-BJ8" secondAttribute="bottom" constant="6" id="bwH-eD-bVX"/>
-                            <constraint firstItem="Cmh-rQ-Oj7" firstAttribute="leading" secondItem="vDM-Mb-nFU" secondAttribute="leading" id="ec2-s5-Qdb"/>
-                            <constraint firstItem="BuY-6E-WJM" firstAttribute="leading" secondItem="vDM-Mb-nFU" secondAttribute="leading" id="f5h-Sv-OUF"/>
-                            <constraint firstItem="vDM-Mb-nFU" firstAttribute="trailing" secondItem="BuY-6E-WJM" secondAttribute="trailing" id="g7d-Nt-0Xe"/>
-                            <constraint firstItem="0Kf-Ze-BJ8" firstAttribute="leading" secondItem="vDM-Mb-nFU" secondAttribute="leading" id="kfy-qR-WoX"/>
-                            <constraint firstItem="spD-8G-vZv" firstAttribute="top" secondItem="vDM-Mb-nFU" secondAttribute="top" id="nEw-6f-CTt"/>
-                            <constraint firstItem="vDM-Mb-nFU" firstAttribute="trailing" secondItem="spD-8G-vZv" secondAttribute="trailing" id="nSN-5P-htc"/>
+                            <constraint firstItem="vDM-Mb-nFU" firstAttribute="bottom" secondItem="0Kf-Ze-BJ8" secondAttribute="bottom" constant="6" id="25L-lZ-GcT"/>
+                            <constraint firstItem="Cmh-rQ-Oj7" firstAttribute="trailing" secondItem="vDM-Mb-nFU" secondAttribute="trailing" id="5cf-Qe-tna"/>
+                            <constraint firstItem="BuY-6E-WJM" firstAttribute="top" secondItem="sTL-g0-Dec" secondAttribute="bottom" id="8dO-5R-gW2"/>
+                            <constraint firstItem="BuY-6E-WJM" firstAttribute="leading" secondItem="vDM-Mb-nFU" secondAttribute="leading" id="Cmo-Ve-LA0"/>
+                            <constraint firstItem="sTL-g0-Dec" firstAttribute="leading" secondItem="vDM-Mb-nFU" secondAttribute="leading" id="GAZ-7V-lHf"/>
+                            <constraint firstItem="sTL-g0-Dec" firstAttribute="trailing" secondItem="vDM-Mb-nFU" secondAttribute="trailing" id="HgT-Gs-r6Z"/>
+                            <constraint firstItem="Cmh-rQ-Oj7" firstAttribute="bottom" secondItem="vDM-Mb-nFU" secondAttribute="bottom" id="JJn-nl-XQV"/>
+                            <constraint firstItem="0Kf-Ze-BJ8" firstAttribute="trailing" secondItem="vDM-Mb-nFU" secondAttribute="trailing" id="Jq8-2E-IRQ"/>
+                            <constraint firstItem="Cmh-rQ-Oj7" firstAttribute="leading" secondItem="vDM-Mb-nFU" secondAttribute="leading" id="KRp-dp-3Vw"/>
+                            <constraint firstItem="0Kf-Ze-BJ8" firstAttribute="leading" secondItem="vDM-Mb-nFU" secondAttribute="leading" id="Rrb-dQ-aJS"/>
+                            <constraint firstItem="BuY-6E-WJM" firstAttribute="trailing" secondItem="vDM-Mb-nFU" secondAttribute="trailing" id="SB9-AK-nRi"/>
+                            <constraint firstItem="sTL-g0-Dec" firstAttribute="top" secondItem="vDM-Mb-nFU" secondAttribute="top" id="jlv-m2-dCX"/>
+                            <constraint firstItem="BuY-6E-WJM" firstAttribute="bottom" secondItem="vDM-Mb-nFU" secondAttribute="bottom" id="lH9-AX-PB8"/>
+                            <constraint firstItem="0Kf-Ze-BJ8" firstAttribute="top" secondItem="sTL-g0-Dec" secondAttribute="bottom" id="ulx-o3-38R"/>
+                            <constraint firstItem="Cmh-rQ-Oj7" firstAttribute="top" secondItem="sTL-g0-Dec" secondAttribute="bottom" id="wSN-De-mhJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vDM-Mb-nFU"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="STORE" image="Store" id="KES-xn-G4w"/>
                     <connections>
-                        <outlet property="categoryView" destination="0Kf-Ze-BJ8" id="eDZ-0C-Eyo"/>
-                        <outlet property="menuView" destination="Cmh-rQ-Oj7" id="9nO-l6-GIk"/>
-                        <outlet property="previewView" destination="BuY-6E-WJM" id="eXd-d0-nAT"/>
+                        <outlet property="viewCategory" destination="Cmh-rQ-Oj7" id="I4e-J0-Oyg"/>
+                        <outlet property="viewMenu" destination="BuY-6E-WJM" id="jER-7R-G0v"/>
+                        <outlet property="viewPreview" destination="0Kf-Ze-BJ8" id="C0x-gC-Js1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jcr-Ff-6uZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -368,7 +368,7 @@
         <!--ACCOUNT-->
         <scene sceneID="9KA-8r-rrU">
             <objects>
-                <viewController id="5rZ-7O-gqW" sceneMemberID="viewController">
+                <viewController id="5rZ-7O-gqW" customClass="AccountViewController" customModule="Café_Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mHE-li-tge">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -389,25 +389,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="587"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="vEZ-Ti-Jg6"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bit-br-YX0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1740" y="1939"/>
+            <point key="canvasLocation" x="2628" y="1938"/>
         </scene>
-        <!--View Controller-->
+        <!--Preview View Controller-->
         <scene sceneID="xtt-nk-UAD">
             <objects>
-                <viewController id="Zja-kU-ktg" sceneMemberID="viewController">
+                <viewController id="Zja-kU-ktg" customClass="PreviewViewController" customModule="Café_Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Za9-eE-LdO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="581"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" estimatedRowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aNY-p1-FeJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="581"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Zja-kU-ktg" id="sbR-iN-F70"/>
+                                    <outlet property="delegate" destination="Zja-kU-ktg" id="bzE-XY-nY1"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rF0-p2-EE8" firstAttribute="bottom" secondItem="aNY-p1-FeJ" secondAttribute="bottom" id="0fF-0r-b9U"/>
+                            <constraint firstItem="aNY-p1-FeJ" firstAttribute="leading" secondItem="rF0-p2-EE8" secondAttribute="leading" id="6hE-EE-aWH"/>
+                            <constraint firstItem="rF0-p2-EE8" firstAttribute="trailing" secondItem="aNY-p1-FeJ" secondAttribute="trailing" id="ip2-4m-n4D"/>
+                            <constraint firstItem="aNY-p1-FeJ" firstAttribute="top" secondItem="rF0-p2-EE8" secondAttribute="top" id="xY9-kG-oRd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rF0-p2-EE8"/>
                     </view>
+                    <connections>
+                        <outlet property="tblFood" destination="aNY-p1-FeJ" id="ycP-V1-CBS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9HL-BF-4Ci" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="942" y="1936"/>
+            <point key="canvasLocation" x="882" y="1934"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="cEe-8f-lGP">
@@ -417,15 +438,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="587"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="DKI-gu-VN6"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gGj-m4-8pg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2628" y="1939"/>
+            <point key="canvasLocation" x="1740" y="1937"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xp0-vM-Q56"/>
+        <segue reference="Od3-pO-qa8"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Account" width="32" height="32"/>
