@@ -6,6 +6,8 @@ class InputValidator {
         static let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         static let nameRegEx = "[A-Za-z ]{2,100}"
         static let mobileRegex = "^(07)(0|1|2|5|6|7|8)[\\d]{7}$"
+        static let regEx = "[A-Za-z0-9 ]{2,50}"
+        static let przEx = "[0-9]{{2,100}"
         
     //    static let NICRegEx = "^([0-9]{9}[x|X|v|V]|[0-9]{12})$"
     //    static let accountNoRegex = "[0-9]{5,30}"
@@ -31,46 +33,15 @@ class InputValidator {
         }
         
         //Validates the mobile no
-        static func isValidMobileNo(_ mobileNo: String) -> Bool{
+        static func isValidMobileNo(mobileNo: String) -> Bool{
             let mobPred = NSPredicate(format:"SELF MATCHES %@", mobileRegex)
             return mobPred.evaluate(with: mobileNo)
         }
+    
+        //Validates the Price
+        static func isValidPrice(No: String) -> Bool{
+            let No = NSPredicate(format:"SELF MATCHES %@", przEx)
+            return No.evaluate(with: No)
+        }
         
-        //Validate the NIC no. with Regex
-    //    static func isValidNIC(_ nic: String) -> Bool {
-    //        let NicPred = NSPredicate(format:"SELF MATCHES %@", NICRegEx)
-    //        return NicPred.evaluate(with: nic)
-    //    }
-        
-
-        
-
-        
-        //Validates the bank account no
-    //    static func isValidAccountNo(_ accountNo: String) -> Bool{
-    //        let accPred = NSPredicate(format:"SELF MATCHES %@", accountNoRegex)
-    //        return accPred.evaluate(with: accountNo)
-    //    }
-        
-        //Validates the bank account no
-    //    static func isvalidBankDetails(_ bankInfo: String) -> Bool{
-    //        let bankPred = NSPredicate(format:"SELF MATCHES %@", bankDetailsRegex)
-    //        return bankPred.evaluate(with: bankInfo)
-    //    }
-        
-        //Checks the length matches to the provided requirement
-    //    static func checkLength(_ text: String, _ count: Int) -> Bool{
-    //        return text.count >= count
-    //    }
-    //
-    //    //Check if the provided data is EMPTY or NULL
-    //    static func isEmptyOrNil(_ text: String?) -> Bool {
-    //        if text == "" || text == nil{
-    //            return true
-    //        }else{
-    //            return false
-    //        }
-    //    }
-    //
-
 }

@@ -15,6 +15,7 @@ class PreviewTableViewCell: UITableViewCell {
     @IBOutlet weak var imgFood: UIImageView!
     @IBOutlet weak var lblFoodDescription: UILabel!
     @IBOutlet weak var lblFoodPrice: UILabel!
+    @IBOutlet weak var lblDicount: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,12 +32,12 @@ class PreviewTableViewCell: UITableViewCell {
         lblFoodPrice.text = "Rs.\(foodItem.foodPrice)"
         imgFood.kf.setImage(with: URL(string: foodItem.img))
         
-//        if foodItem.discount > 0 {
-//            lblDiscount.isHidden = false
-//            lblDiscount.text = "\(foodItem.discount)%"
-//        }else{
-//            lblDiscount.isHidden = true
-//            lblDiscount.text = ""
-//        }
+        if foodItem.discount > 0 {
+            lblDicount.isHidden = false
+            lblDicount.text = "\(foodItem.discount)%"
+        }else{
+            lblDicount.isHidden = true
+            lblDicount.text = ""
+        }
     }
 }

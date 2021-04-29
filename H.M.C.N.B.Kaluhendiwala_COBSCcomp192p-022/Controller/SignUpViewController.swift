@@ -63,7 +63,7 @@ class SignUpViewController: UIViewController {
             return
         }
                 
-        if !InputValidator.isValidMobileNo(txtPhone.text ?? ""){
+        if !InputValidator.isValidMobileNo(mobileNo:txtPhone.text ?? ""){
             Loaf("Please use a standarded Phone pattern", state: .error, sender: self).show()
             return
         }

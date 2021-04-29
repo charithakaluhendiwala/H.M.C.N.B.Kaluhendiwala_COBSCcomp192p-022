@@ -40,7 +40,7 @@ extension PreviewViewController {
                                                           foodName: foodInfo["name"] as! String,
                                                           foodDescription: foodInfo["description"] as! String,
                                                           foodPrice: foodInfo["price"] as! Double,
-//                                                          discount: foodInfo["discount"] as! Int,
+                                                          discount: foodInfo["discount"] as! Int,
                                                           category: foodInfo["category"] as! String)
                             self.foodItems.append(singleFoodItem)
                         }
@@ -50,20 +50,33 @@ extension PreviewViewController {
             }
         })
     }
+    
 }
 
 
 
 extension PreviewViewController: UITableViewDelegate,UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
         return foodItems.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       return foodItems.count
+//        return foodItems[section].category.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tblFood.dequeueReusableCell(withIdentifier: "FoodCellReuseIdentifer", for: indexPath) as! PreviewTableViewCell
-         cell.setupView(foodItem: foodItems[indexPath.row])
+        
+        cell.setupView(foodItem: foodItems[indexPath.row])
          return cell
     }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return foodItems[section].category
+    }
+    
+
     
      
 }

@@ -53,27 +53,3 @@ class StoreViewController: UIViewController {
     
     
     
-//    @IBAction func switchViews(_ sender: UISegmentedControl) {
-//            switch sender.selectedSegmentIndex{
-//            case 0:
-//                previewView.isHidden = false
-//                categoryView.isHidden = true
-//                menuView.isHidden = true
-//        
-//            case 1:
-//                previewView.isHidden = true
-//                categoryView.isHidden = false
-//                menuView.isHidden = true
-//    
-//            case 2:
-//                previewView.isHidden = true
-//                categoryView.isHidden = true
-//                menuView.isHidden = false
-//    
-//            default:
-//                break
-//        
-//    }
-    
-//   }
-//}

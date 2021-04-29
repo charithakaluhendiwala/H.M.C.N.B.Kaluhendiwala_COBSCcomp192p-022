@@ -13,9 +13,10 @@
 		DB07E55F263557DB005872F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB07E55D263557DB005872F0 /* Main.storyboard */; };
 		DB07E561263557DC005872F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB07E560263557DC005872F0 /* Assets.xcassets */; };
 		DB07E564263557DC005872F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB07E562263557DC005872F0 /* LaunchScreen.storyboard */; };
+		DB0BFE7326399B05008CA874 /* ForgotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0BFE7226399B05008CA874 /* ForgotViewController.swift */; };
+		DB53DAE02637C41600A6AAFD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB53DADF2637C41600A6AAFD /* MenuViewController.swift */; };
 		DBD6DABC26357D9400FF03EE /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD6DABB26357D9400FF03EE /* SignInViewController.swift */; };
 		DBD6DABE26357DB500FF03EE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD6DABD26357DB500FF03EE /* SignUpViewController.swift */; };
-		DBD6DAC026357F4000FF03EE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBD6DABF26357F4000FF03EE /* GoogleService-Info.plist */; };
 		DBD6DAC2263587C700FF03EE /* EntityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD6DAC1263587C700FF03EE /* EntityModel.swift */; };
 		DBD6DAC526358A7B00FF03EE /* InputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD6DAC426358A7B00FF03EE /* InputValidator.swift */; };
 		DBD6DAC726358C5F00FF03EE /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD6DAC626358C5F00FF03EE /* SessionManager.swift */; };
@@ -25,21 +26,23 @@
 		DBEF871626369DBD00DAE5CC /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEF871526369DBD00DAE5CC /* PreviewViewController.swift */; };
 		DBEF871A2636A1C800DAE5CC /* PreviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEF87182636A1C800DAE5CC /* PreviewTableViewCell.swift */; };
 		DBEF871B2636A1C800DAE5CC /* PreviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBEF87192636A1C800DAE5CC /* PreviewTableViewCell.xib */; };
+		DBFE6E4E2636DD3C00ADD7C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBFE6E4D2636DD3C00ADD7C5 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		383236135E6C6D3B58510650 /* Pods-H.M.C.N.B.Kaluhendiwala_COBSCcomp192p-022.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H.M.C.N.B.Kaluhendiwala_COBSCcomp192p-022.release.xcconfig"; path = "Target Support Files/Pods-H.M.C.N.B.Kaluhendiwala_COBSCcomp192p-022/Pods-H.M.C.N.B.Kaluhendiwala_COBSCcomp192p-022.release.xcconfig"; sourceTree = "<group>"; };
 		C4D89808D55A72716318AB65 /* Pods_H_M_C_N_B_Kaluhendiwala_COBSCcomp192p_022.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_H_M_C_N_B_Kaluhendiwala_COBSCcomp192p_022.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB07E554263557DB005872F0 /* Café-Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Café-Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB07E554263557DB005872F0 /* H.M.C.N.B.Kaluhendiwala_COBSCcomp192p-022.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "H.M.C.N.B.Kaluhendiwala_COBSCcomp192p-022.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB07E557263557DB005872F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB07E559263557DB005872F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DB07E55E263557DB005872F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB07E560263557DC005872F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB07E563263557DC005872F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB07E565263557DC005872F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB0BFE7226399B05008CA874 /* ForgotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotViewController.swift; sourceTree = "<group>"; };
+		DB53DADF2637C41600A6AAFD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		DBD6DABB26357D9400FF03EE /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		DBD6DABD26357DB500FF03EE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		DBD6DABF26357F4000FF03EE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DBD6DAC1263587C700FF03EE /* EntityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityModel.swift; sourceTree = "<group>"; };
 		DBD6DAC426358A7B00FF03EE /* InputValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputValidator.swift; sourceTree = "<group>"; };
 		DBD6DAC626358C5F00FF03EE /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		DBEF871526369DBD00DAE5CC /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		DBEF87182636A1C800DAE5CC /* PreviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewTableViewCell.swift; sourceTree = "<group>"; };
 		DBEF87192636A1C800DAE5CC /* PreviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreviewTableViewCell.xib; sourceTree = "<group>"; };
+		DBFE6E4D2636DD3C00ADD7C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E1B64AC5AE8E4D78A564E4D1 /* Pods-H.M.C.N.B.Kaluhendiwala_COBSCcomp192p-022.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H.M.C.N.B.Kaluhendiwala_COBSCcomp192p-022.debug.xcconfig"; path = "Target Support Files/Pods-H.M.C.N.B.Kaluhendiwala_COBSCcomp192p-022/Pods-H.M.C.N.B.Kaluhendiwala_COBSCcomp192p-022.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,7 +98,7 @@
 		DB07E555263557DB005872F0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DB07E554263557DB005872F0 /* Café-Manager.app */,
+				DB07E554263557DB005872F0 /* H.M.C.N.B.Kaluhendiwala_COBSCcomp192p-022.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,7 +116,7 @@
 				DB07E560263557DC005872F0 /* Assets.xcassets */,
 				DB07E562263557DC005872F0 /* LaunchScreen.storyboard */,
 				DB07E565263557DC005872F0 /* Info.plist */,
-				DBD6DABF26357F4000FF03EE /* GoogleService-Info.plist */,
+				DBFE6E4D2636DD3C00ADD7C5 /* GoogleService-Info.plist */,
 			);
 			path = "H.M.C.N.B.Kaluhendiwala_COBSCcomp192p-022";
 			sourceTree = "<group>";
@@ -142,6 +146,8 @@
 				DBD6DACA2635C28300FF03EE /* StoreViewController.swift */,
 				DBEF870A2636776500DAE5CC /* AccountViewController.swift */,
 				DBEF871526369DBD00DAE5CC /* PreviewViewController.swift */,
+				DB53DADF2637C41600A6AAFD /* MenuViewController.swift */,
+				DB0BFE7226399B05008CA874 /* ForgotViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -183,7 +189,7 @@
 			);
 			name = "H.M.C.N.B.Kaluhendiwala_COBSCcomp192p-022";
 			productName = "H.M.C.N.B.Kaluhendiwala_COBSCcomp192p-022";
-			productReference = DB07E554263557DB005872F0 /* Café-Manager.app */;
+			productReference = DB07E554263557DB005872F0 /* H.M.C.N.B.Kaluhendiwala_COBSCcomp192p-022.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -226,8 +232,8 @@
 			files = (
 				DB07E564263557DC005872F0 /* LaunchScreen.storyboard in Resources */,
 				DB07E561263557DC005872F0 /* Assets.xcassets in Resources */,
+				DBFE6E4E2636DD3C00ADD7C5 /* GoogleService-Info.plist in Resources */,
 				DB07E55F263557DB005872F0 /* Main.storyboard in Resources */,
-				DBD6DAC026357F4000FF03EE /* GoogleService-Info.plist in Resources */,
 				DBEF871B2636A1C800DAE5CC /* PreviewTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,10 +290,12 @@
 				DBD6DAC2263587C700FF03EE /* EntityModel.swift in Sources */,
 				DBD6DAC526358A7B00FF03EE /* InputValidator.swift in Sources */,
 				DBEF870B2636776500DAE5CC /* AccountViewController.swift in Sources */,
+				DB0BFE7326399B05008CA874 /* ForgotViewController.swift in Sources */,
 				DB07E558263557DB005872F0 /* AppDelegate.swift in Sources */,
 				DBEF871626369DBD00DAE5CC /* PreviewViewController.swift in Sources */,
 				DB07E55A263557DB005872F0 /* SceneDelegate.swift in Sources */,
 				DBEF871A2636A1C800DAE5CC /* PreviewTableViewCell.swift in Sources */,
+				DB53DAE02637C41600A6AAFD /* MenuViewController.swift in Sources */,
 				DBD6DABE26357DB500FF03EE /* SignUpViewController.swift in Sources */,
 				DBD6DACB2635C28300FF03EE /* StoreViewController.swift in Sources */,
 				DBD6DABC26357D9400FF03EE /* SignInViewController.swift in Sources */,
@@ -445,7 +453,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chari.H-M-C-N-B-Kaluhendiwala-COBSCcomp192p-022";
-				PRODUCT_NAME = "Café-Manager";
+				PRODUCT_NAME = "H.M.C.N.B.Kaluhendiwala_COBSCcomp192p-022";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -464,7 +472,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chari.H-M-C-N-B-Kaluhendiwala-COBSCcomp192p-022";
-				PRODUCT_NAME = "Café-Manager";
+				PRODUCT_NAME = "H.M.C.N.B.Kaluhendiwala_COBSCcomp192p-022";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
