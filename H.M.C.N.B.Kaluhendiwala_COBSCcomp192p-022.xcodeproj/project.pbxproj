@@ -14,6 +14,7 @@
 		DB07E561263557DC005872F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB07E560263557DC005872F0 /* Assets.xcassets */; };
 		DB07E564263557DC005872F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB07E562263557DC005872F0 /* LaunchScreen.storyboard */; };
 		DB0BFE7326399B05008CA874 /* ForgotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0BFE7226399B05008CA874 /* ForgotViewController.swift */; };
+		DB3A2133263AE62F00346298 /* SignOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3A2132263AE62F00346298 /* SignOutViewController.swift */; };
 		DB53DAE02637C41600A6AAFD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB53DADF2637C41600A6AAFD /* MenuViewController.swift */; };
 		DBD6DABC26357D9400FF03EE /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD6DABB26357D9400FF03EE /* SignInViewController.swift */; };
 		DBD6DABE26357DB500FF03EE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD6DABD26357DB500FF03EE /* SignUpViewController.swift */; };
@@ -40,6 +41,7 @@
 		DB07E563263557DC005872F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB07E565263557DC005872F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB0BFE7226399B05008CA874 /* ForgotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotViewController.swift; sourceTree = "<group>"; };
+		DB3A2132263AE62F00346298 /* SignOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutViewController.swift; sourceTree = "<group>"; };
 		DB53DADF2637C41600A6AAFD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		DBD6DABB26357D9400FF03EE /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		DBD6DABD26357DB500FF03EE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				DBEF871526369DBD00DAE5CC /* PreviewViewController.swift */,
 				DB53DADF2637C41600A6AAFD /* MenuViewController.swift */,
 				DB0BFE7226399B05008CA874 /* ForgotViewController.swift */,
+				DB3A2132263AE62F00346298 /* SignOutViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				DB07E558263557DB005872F0 /* AppDelegate.swift in Sources */,
 				DBEF871626369DBD00DAE5CC /* PreviewViewController.swift in Sources */,
 				DB07E55A263557DB005872F0 /* SceneDelegate.swift in Sources */,
+				DB3A2133263AE62F00346298 /* SignOutViewController.swift in Sources */,
 				DBEF871A2636A1C800DAE5CC /* PreviewTableViewCell.swift in Sources */,
 				DB53DAE02637C41600A6AAFD /* MenuViewController.swift in Sources */,
 				DBD6DABE26357DB500FF03EE /* SignUpViewController.swift in Sources */,

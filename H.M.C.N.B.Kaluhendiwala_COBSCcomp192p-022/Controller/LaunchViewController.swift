@@ -15,12 +15,11 @@ class LaunchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
         if sessionM.getSigninState(){
-            self.performSegue(withIdentifier: "Launch2Signin", sender: nil)
+            self.performSegue(withIdentifier: "Launch2Home", sender: nil)
         }else{
             self.performSegue(withIdentifier: "Launch2Signin", sender: nil)
         }
