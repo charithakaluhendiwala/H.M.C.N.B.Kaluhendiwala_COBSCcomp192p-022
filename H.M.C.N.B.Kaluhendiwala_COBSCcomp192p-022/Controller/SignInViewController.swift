@@ -37,6 +37,7 @@ class SignInViewController: UIViewController {
             self.present(alert, animated: true, completion: nil)
             return
         }
+        authnticateUser(email: txtEmail.text!, password: txtPassword.text!)
     }
     
     
@@ -58,7 +59,7 @@ class SignInViewController: UIViewController {
                                        let sessionM = SessionManager()
                                        sessionM.saveUserLogin(user: user)
                                        //move to home screen
-                                       self.performSegue(withIdentifier: "LoginToHome", sender: nil)
+                                       self.performSegue(withIdentifier: "Home", sender: nil)
                                    }
                    }
                                }else{

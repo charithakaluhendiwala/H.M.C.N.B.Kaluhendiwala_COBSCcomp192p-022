@@ -94,7 +94,6 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="onSigninPressed:" destination="yoU-4B-gQW" eventType="touchUpInside" id="HCP-an-ffF"/>
-                                            <segue destination="9yQ-KD-t8a" kind="presentation" modalPresentationStyle="fullScreen" id="xp0-vM-Q56"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -156,6 +155,7 @@
                     <connections>
                         <outlet property="txtEmail" destination="fSw-ZB-lYJ" id="AhB-CI-H2D"/>
                         <outlet property="txtPassword" destination="znQ-Va-ODC" id="Bhe-Hm-AFG"/>
+                        <segue destination="9yQ-KD-t8a" kind="presentation" identifier="Home" modalPresentationStyle="fullScreen" id="DUG-HD-iLL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rlb-Ek-46t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -824,7 +824,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xp0-vM-Q56"/>
+        <segue reference="DUG-HD-iLL"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Account" width="32" height="32"/>

@@ -13,13 +13,13 @@ class SignOutViewController: UIViewController {
         super.viewDidLoad()
         let user = sessionM.getUserInfo()
         txtUserName.text = user.userName
-        txtEmail.text = user.userPhone
+        txtEmail.text = user.userEmail
         txtPhone.text = user.userPhone
     }
     
 
     @IBAction func onSignOutPressed(_ sender: Any) {
         sessionM.clearLoginState()
-        //exit(0);
+        exit(0);
     }
 }
