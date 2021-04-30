@@ -574,7 +574,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="s1x-ff-r9t">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" estimatedRowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="s1x-ff-r9t">
                                 <rect key="frame" x="10" y="117" width="355" height="491"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <connections>
@@ -602,6 +602,12 @@
                         <viewLayoutGuide key="safeArea" id="kVx-Hb-8kx"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="ACCOUNT" image="Account" id="EKd-29-dHL"/>
+                    <connections>
+                        <outlet property="lblTotal" destination="DhI-uf-qcj" id="fZ1-P0-gNF"/>
+                        <outlet property="tblOrders" destination="s1x-ff-r9t" id="5SD-tK-h9B"/>
+                        <outlet property="txtFrom" destination="rtp-5e-nl3" id="0fa-fU-bct"/>
+                        <outlet property="txtTo" destination="rns-7a-hdl" id="szI-JT-qOJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZNe-lF-SAz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
