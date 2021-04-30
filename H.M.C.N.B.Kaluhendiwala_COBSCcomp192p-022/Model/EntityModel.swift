@@ -16,11 +16,42 @@ struct User {
 }
 
 struct FoodItem {
-    var _id: String
-    var img: String
+    var foodItemID: String
     var foodName: String
     var foodDescription: String
     var foodPrice: Double
     var discount: Int
-    var category:String
+    var foodImgRes: String
+    var foodCategory: String
+    var isActive: Bool
+}
+
+///category
+struct Category {
+    var id: String
+    var Name: String
+}
+
+//struct Items {
+//    var id: String
+//    var Name: String
+//    var Description: String
+//    var Price: Decimal
+//    var Image: String
+//    var CategoryId: Int
+//    var Discount: Decimal
+//}
+
+struct Order {
+    var orderID: String
+    var cust_email: String
+    var cust_name: String
+    var date: Double
+    var status_code: Int
+    var orderItems: [OrderItem] = []
+}
+
+struct OrderItem {
+    var item_name: String
+    var price: Double
 }
